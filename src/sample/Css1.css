@@ -1,0 +1,25 @@
+
+.button{
+    -fx-background-color: transparent;
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+     -fx-background-position: center;
+}
+
+.button:hover{
+    -fx-background-color: lightblue;
+
+}
+}
+.button:pressed{
+    -fx-rotate: 10;
+  
+}
+
+
+
+.label{
+    
+    -fx-text-fill: navy;
+
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="414.0" stylesheets="@Css1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+      <Button fx:id="recule" disable="true" mnemonicParsing="false" prefHeight="19.0" prefWidth="9.0" BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@left.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </left>
+   <right>
+      <Button fx:id="avance" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="23.0" BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@right.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </right>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <HBox prefHeight="27.0" prefWidth="400.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Open" prefHeight="23.0" prefWidth="28.0">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Open.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Save" disable="true" mnemonicParsing="false" onAction="#Save">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Save.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="delete" disable="true" mnemonicParsing="false" onAction="#erease">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Erease.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="rotate" disable="true" mnemonicParsing="false" onAction="#rotate">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Rotate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="moins" disable="true" mnemonicParsing="false" onAction="#zoomout">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Zoomout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="plus" disable="true" mnemonicParsing="false" onAction="#zoomIn">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Zoomin.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+        </items>
+      </ToolBar>
+   </top>
+   <bottom>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <HBox prefHeight="24.0" prefWidth="400.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#effect1" prefHeight="35.0" prefWidth="57.0">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="label" prefHeight="29.0" prefWidth="110.0" />
+               </children>
+            </HBox>
+         </items>
+      </ToolBar>
+   </bottom>
+   <center>
+      <ScrollPane prefHeight="334.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+         <content>
+            <StackPane prefHeight="334.0" prefWidth="330.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="334.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
